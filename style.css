@@ -1,0 +1,306 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("img/bg1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #e9e511;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  position: fixed;
+  height: auto;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+}
+
+.logo {
+  display: block;
+  width: 30vw;
+  max-width: 50%;
+  height: auto;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1{
+  margin: 0;
+  color: #eaee0b;
+  text-align: center;
+}
+
+h2{
+  margin: 0;
+  text-align: center;
+  font-size: smaller;
+}
+
+h3{
+  margin: 0,0,20;
+  padding: 0,0,0,50px;
+  text-align: left;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #131313; /* Replace with your desired background color */
+  z-index: 999; /* Adjust the z-index as needed */
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ffffff; /* Set the opposite color for hover */
+  color: #000000; /* Set the opposite color for hover */
+}
+
+nav a:active {
+  background-color: #000000; /* Set the opposite color for active */
+  color: #ffffff; /* Set the opposite color for active */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 5;
+  padding: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f8f7f7;
+}
+
+
+section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-weight: bold;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+body {
+  background-image: url("img/bg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.normal {
+  font-weight: normal;
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.about {
+  animation: floatAnimation 2s;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(50px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.about-section { /* CSS of About section */
+  background-color: #f5efef;
+  display: flex;
+  align-items: center;
+}
+
+.about-image {
+  flex: 0 0 auto;
+  max-width: 30%;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.about-image img {
+  margin: 20px;
+  max-width: 70%;
+  height: auto;
+}
+
+.about-content {
+  flex: 1 1 auto;
+  margin-right: 5%;
+}
+
+.about-content h4 {
+  font-size: xx-large;
+  text-align: left;
+  margin: 2;
+  color: #eeb10b;
+  margin-bottom: 10px; /* Adjust the spacing here */
+}
+
+.about-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.photo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.photo-container2 img {
+  max-width: 90%;
+  height: auto;
+}
+
+/* This is the Skills Section stuff */
+.skills {                         
+  margin-left: 0px; /* Adjust the left indent as needed */
+}
+
+.skills h2{                         
+  text-align: left;
+  margin-right: 30px;
+}
+
+.skills-content {
+  display: flex;
+}
+
+.container {
+  display: flex;
+}
+
+.title {
+  font-size: 24px; /* Adjust the font size as needed */
+  text-align: left;
+}
+
+.navigation-pane {
+  margin-right: 0px; /* Adjust the right margin as needed */
+  display: flex;
+  flex-direction: column;
+  margin: 0px; /*Space between nav and content boxes*/
+}
+
+@media (max-width: 767px) {
+  .navigation-pane {
+    flex-direction: row;
+  }
+  
+  .navigation-pane nav li {
+    margin-bottom: 0;
+    margin-right: 20px; /* Adjust the horizontal spacing between navigation options */
+  }
+}
+
+.navigation-pane nav ul {
+  list-style: none;
+  padding-left: 5%;
+  padding-right: 40%;
+  margin-left: 20%;
+  margin-right: 0%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content-pane {
+  margin-top: 0px; /* Add an upper margin of 30px */
+  background-color: #f5efef;
+  padding: 20px;
+}
+
+.content-pane .content {
+  display: none;
+}
+
+.content-pane .active-content {
+  display: inline-block;
+}
+
+.container {
+  margin-left: 10%; /* Adjust the left margin as needed */
+  margin-right: 10%; /* Adjust the right margin as needed */
+}
+
+/*forms css*/
+#contact form input[type="text"],
+#contact form input[type="email"] {
+  max-width: 90%;
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  /* Add any other desired styling */
+}
+
+#contact form textarea {
+  max-width: 90%;
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  /* Add any other desired styling */
+}
+
+/*Button CSS*/
+.button-container {
+  text-align: left;
+}
